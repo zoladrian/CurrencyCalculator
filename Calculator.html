@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Calculator with Currency Conversion</title>
+
+    <style>
+        #calculator {
+            width: 300px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cell input[type="button"] {
+            width: 100%;
+            font-size: 27px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 90%;
+            font-size: 25px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            height: 100%;
+        }
+
+        #result-holder {
+            grid-column: span 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <div class="cell" id="result-holder">
+            <input type="text" id="result" />
+        </div>
+        <div class="cell">
+            <input type="button" value="GBP" />
+        </div>
+        <div class="cell">
+            <input type="button" value="EUR" />
+        </div>
+        <div class="cell">
+            <input type="button" value="USD" />
+        </div>
+        <div class="cell">
+            <input type="button" value="C" />
+        </div>
+        <div class="cell">
+            <input type="button" value="7" />
+        </div>
+        <div class="cell">
+            <input type="button" value="8" />
+        </div>
+        <div class="cell">
+            <input type="button" value="9" />
+        </div>
+        <div class="cell">
+            <input type="button" value="/" />
+        </div>
+        <div class="cell">
+            <input type="button" value="4" />
+        </div>
+        <div class="cell">
+            <input type="button" value="5" />
+        </div>
+        <div class="cell">
+            <input type="button" value="6" />
+        </div>
+        <div class="cell">
+            <input type="button" value="*" />
+        </div>
+        <div class="cell">
+            <input type="button" value="1" />
+        </div>
+        <div class="cell">
+            <input type="button" value="2" />
+        </div>
+        <div class="cell">
+            <input type="button" value="3" />
+        </div>
+        <div class="cell">
+            <input type="button" value="-" />
+        </div>
+        <div class="cell">
+            <input type="button" value="." />
+        </div>
+        <div class="cell">
+            <input type="button" value="0" />
+        </div>
+        <div class="cell">
+            <input type="button" value="=" />
+        </div>
+        <div class="cell">
+            <input type="button" value="+" />
+        </div>
+    </div>
+</body>
+</html>
